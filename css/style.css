@@ -19,10 +19,9 @@ Gold - Icons - FCCD3C
 }
 
 hr {
-    max-width: 1140px;
+    max-width: 870px;
     display: block;
-    margin: 0 auto;
-    padding: 10px 0;
+    margin: 1rem auto;
 }
 
 body,
@@ -385,6 +384,10 @@ header {
     padding: 1.5rem;
 }
 
+#section-projects .col {
+    padding: 1rem 2px;
+}
+
 .project-title {
     font-size: 105%;
     font-weight: 700;
@@ -404,6 +407,11 @@ header {
     padding-bottom: 0.2rem;
 }
 
+#section-projects .row,
+#section-personal-projects .row {
+    margin-bottom: 0.5rem;
+}
+
 .text-muted {
     color: gray;
     font-style: italic;
@@ -412,20 +420,27 @@ header {
 
 #section-projects img,
 #section-personal-projects img {
-    padding: 1.5%;
     width: 90%;
+    margin: 0 auto;
+}
+
+#section-personal-projects img {
+    margin-top: 10px;
 }
 
 #section-projects .row,
 #section-personal-projects .row {
-    padding: 2%;
+    padding: 5px;
     margin-top: 20px;
-    margin-bottom: 40px;
 }
 
 #section-projects p,
 #section-personal-projects p {
     color: gray;
+}
+
+#section-personal-projects .span-1-of-3 {
+    padding: 25px 2px;
 }
 
 
@@ -449,6 +464,25 @@ header {
 
 #section-contact p {
     line-height: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.contact-btn {
+    text-transform: uppercase;
+    color: black;
+    padding: 12px 30px;
+    border: 3px solid #0ee;
+    border-radius: 50px;
+    border-color: black;
+    transition: background-color 0.4s, color 0.4s;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -.02rem;
+}
+
+.contact-btn:hover {
+    background-color: black;
+    color: #FDCD3B;
 }
 
 
@@ -468,16 +502,17 @@ footer {
     padding-bottom: 10px;
     position: relative;
     text-align: center;
+    margin: 0 auto;
 }
 
 .social-links {
     list-style: none;
-    float: right;
+    margin: 0 auto;
 }
 
 .social-links li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-top: 30px;
     padding-right: 25px;
 }
@@ -536,6 +571,7 @@ footer p {
 
 .fa-chevron-circle-up {
     margin-top: 35px;
+    margin-right: 18px;
     font-size: 220%;
     color: rgba(22, 215, 235, 0.5);
     transition: 0.2s;
@@ -544,4 +580,92 @@ footer p {
 .fa-chevron-circle-up:hover {
     color: rgba(22, 215, 235, 1);
     transition: 0.2s;
+}
+
+.arrow-btn {
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+/*--------------------------------------------*/
+
+
+/*********  QUERIES**/
+
+
+/**************************/
+
+@media screen and (max-width:1024px) {
+    body {
+        font-size: 18px;
+    }
+    #section-projects,
+    #section-personal-projects,
+    #section-contact,
+    #section-expertise {
+        padding: 50px 0;
+        text-align: center;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        font-size: 16px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .btn-visit {
+        width: 45%;
+        padding: 0.4rem;
+        margin: 0.6rem auto;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+    .btn-scroll-about {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    p {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    .btn-visit {
+        padding: 0.3rem;
+        width: 60%;
+    }
+    .btn-cta {
+        padding: 10px 25px;
+    }
+    #section-personal-projects img {
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #section-personal-projects .col {
+        padding: 1.3rem;
+    }
+    .btn-cta {
+        padding: 8px 30px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body {
+        font-size: 14px;
+    }
+    .btn-visit {
+        padding: 0.3rem;
+        width: 50%;
+    }
 }

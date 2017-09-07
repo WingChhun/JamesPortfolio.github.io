@@ -28,7 +28,7 @@
 /*  GRID COLUMN SETUP   ==================================================================== */
 
 .col {
-    display: block;
+    display: inline-block;
     float: left;
     margin: 1% 0 1% 1.6%;
 }
@@ -87,6 +87,9 @@
 .span-1-of-3 {
     width: 32.26%;
 }
+
+
+/* Go half width at less than 764px  */
 
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
