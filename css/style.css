@@ -1,3 +1,11 @@
+/* COLORS
+Teal - button #10DBDA
+Light - teal 88FFFF
+Backgorund - teal 56CEB456CEB4
+Gold yellow - FDCD3B
+Gold - Icons - FCCD3C
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +18,16 @@
     margin: 0 auto;
 }
 
+hr {
+    max-width: 1140px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
 body,
 html {
-    font-family: "montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0 auto;
     font-size: 20px;
     background: url("../img/subtle_white_feathers.png");
@@ -20,23 +35,24 @@ html {
 
 h1 {
     font-size: 250%;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 3px;
-    word-spacing: 4px;
+    letter-spacing: -.1rem;
+    line-height: 1.2;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 220%;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 3px;
-    word-spacing: 2px;
+    font-size: 180%;
+    font-weight: 700;
+    letter-spacing: -.05rem;
 }
 
 p {
-    line-height: 130%;
-    font-size: 20px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .underline {
@@ -112,7 +128,7 @@ nav ul li a:hover {
 header {
     color: white;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/parallax2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -152,7 +168,7 @@ header {
 
 .btn-visit {
     display: block;
-    padding: 1rem;
+    padding: 0.6rem;
     border: 2px solid #0ff;
     width: 40%;
     text-align: center;
@@ -227,13 +243,13 @@ header {
 
 #section-expertise h2 {
     padding: 1rem;
-    margin-bottom: 2.5rem;
 }
 
 #section-expertise .fa {
     font-size: 300%;
-    color: #8ff;
+    color: #FCCD3C;
     margin-bottom: 1.5rem;
+    margin-top: 1.2rem;
 }
 
 #section-expertise h3 {
@@ -241,11 +257,12 @@ header {
     letter-spacing: 1px;
     padding: 1rem;
     font-size: 130%;
+    font-weight: 700;
 }
 
 #section-expertise p {
-    line-height: 135%;
     padding: 5px;
+    color: gray;
 }
 
 
@@ -329,11 +346,11 @@ header {
     padding: 80px 0;
     margin: 0 auto;
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/parallax2.jpg") center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/parallax-photo.jpg") center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80vh;
+    height: 75vh;
 }
 
 .section-parallax h2 {
@@ -356,13 +373,23 @@ header {
 
 /***********************************************/
 
-#section-projects {
+#section-projects,
+#section-personal-projects,
+#section-contact {
     padding: 80px 0;
 }
 
-#section-projects h2 {
+#section-projects h2,
+#section-personal-projects h2 {
     text-align: center;
     padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 105%;
+    font-weight: 700;
+    color: black;
+    padding: 0.8rem;
 }
 
 .under-head {
@@ -378,21 +405,50 @@ header {
 }
 
 .text-muted {
-    color: black;
-    text-transform: uppercase;
+    color: gray;
     font-style: italic;
     padding: 0.5rem 0;
 }
 
-#section-projects img {
-    width: 80%;
-    box-shadow: 8px 10px rgba(128, 128, 128, 0.15);
+#section-projects img,
+#section-personal-projects img {
+    padding: 1.5%;
+    width: 90%;
 }
 
-#section-projects .row {
-    padding: 20px;
+#section-projects .row,
+#section-personal-projects .row {
+    padding: 2%;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+#section-projects p,
+#section-personal-projects p {
+    color: gray;
+}
+
+
+/*--------------------------------------------*/
+
+
+/******CONTACT    **/
+
+
+/***********************************************/
+
+#section-contact {
+    background-color: #FDCD3B;
+    color: black;
+    text-align: center;
+}
+
+#section-contact h2 {
+    padding: 1rem;
+}
+
+#section-contact p {
+    line-height: 1.2rem;
 }
 
 
@@ -457,6 +513,10 @@ footer .fa {
 
 .fa-twitter-square:hover {
     color: #00aced;
+}
+
+.fa-codepen:hover {
+    color: #f58233;
 }
 
 .fa-linkedin-square:hover {
