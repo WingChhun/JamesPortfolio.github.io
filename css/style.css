@@ -83,6 +83,24 @@ nav ul {
     display: inline-block;
 }
 
+.burger-nav,
+.burger-nav i .fa,
+.burger-nav i fa-bars {
+    margin-top: 15px;
+    padding: 5px;
+    cursor: pointer;
+    float: right;
+    color: white;
+    visibility: hidden;
+    display: none;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+
+.fa .fa-bars {
+    background-color: gray;
+}
+
 
 /*--------------------------------------------*/
 
@@ -116,7 +134,7 @@ nav ul li a:hover {
 }
 
 .brand-name {
-    padding-top: 20px;
+    margin-top: 20px;
     letter-spacing: 4px;
     float: left;
     color: white;
@@ -596,6 +614,12 @@ footer p {
 
 /**************************/
 
+@media screen and (max-width:1200px) {
+    header {
+        overflow: hidden;
+    }
+}
+
 @media screen and (max-width:1024px) {
     body {
         font-size: 18px;
@@ -632,7 +656,7 @@ footer p {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:640px) {
     p {
         font-size: 14px;
     }
@@ -648,6 +672,41 @@ footer p {
     }
     #section-personal-projects img {
         margin-bottom: 18px;
+    }
+    /*  RESPONSIVE HAMBURGER */
+    .burger-nav,
+    .burger-nav .fa .fa-bars {
+        display: inline-block;
+        visibility: visible;
+    }
+    header {
+        overflow: hidden;
+    }
+    header nav ul {
+        margin: 0 auto;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.1);
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    header nav ul.open {
+        visibility: visible;
+        transition: height 2s;
+        height: auto;
+    }
+    header nav ul li {
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    header nav ul li a {
+        display: block;
+        padding: 10px;
+        color: white;
+        border-bottom: 1px solid #404040;
+        margin: 0;
     }
 }
 

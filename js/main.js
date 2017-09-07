@@ -17,6 +17,9 @@ $(document).ready(function () {
             });
         }
     });
+    $(".burger-nav").on("click", function () {
+        $("header nav ul").toggleClass("open");
+    });
 });
 $(function () {
     $('a[href*="#"]:not([href="#"])').click(function () {
@@ -32,33 +35,3 @@ $(function () {
         }
     });
 });
-/**** ANIMATIONS *****/
-/** Cover **/
-$('.js-wp-1').waypoint(function () {
-    //fade in 
-    $('.js-wp-1').addClass('animated fadeIn')
-}, {
-    offset: '50%'
-});
-$('.js-wp-2').waypoint(function () {
-    //fade in left
-    $('.js-wp-2').addClass('animated fadeInLeft fadeIn')
-}, {
-    offset: '90%'
-});
-$('.js-wp-3').waypoint(function () {
-    //fade in right
-    $('.js-wp-3').addClass('animated fadeInRight fadeIn')
-}, {
-    offset: '90%'
-});
-/** Parallax **/
-/** Expertise
- **/
-$('.js-wp-4').waypoint(function () {
-    //fade in 
-    $('.js-wp-4').addClass('animated fadeIn')
-}, {
-    offset: '99%'
-});
-/** Projects **/
