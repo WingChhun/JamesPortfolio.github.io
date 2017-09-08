@@ -688,11 +688,12 @@ footer p {
         background: rgba(0, 0, 0, 0.1);
         height: 0;
         visibility: hidden;
+        transition: height .5s ease=out;
         overflow: hidden;
     }
     header nav ul.open {
         visibility: visible;
-        transition: height 2s;
+        transition: height .5s ease-in;
         height: auto;
     }
     header nav ul li {
